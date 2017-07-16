@@ -14,7 +14,7 @@ service 'W3SVC' do
 end
 
 directory 'c:\inetpub\wwwroot' do
-  owner 'IIS_IUSRS'
+  rights:read, 'IIS_IUSRS'
   recursive true
   action :create
 end

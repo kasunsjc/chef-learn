@@ -1,0 +1,7 @@
+DEPENDENCIES
+  learn_chef_iis
+    path: .
+    metadata: true
+
+GRAPH
+  learn_chef_iis (0.4.1)

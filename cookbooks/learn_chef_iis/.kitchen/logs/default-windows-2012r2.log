@@ -1,0 +1,5 @@
+I, [2017-07-15T11:51:05.111224 #4104]  INFO -- default-windows-2012r2: -----> Destroying <default-windows-2012r2>...
+I, [2017-07-15T11:51:05.115233 #4104]  INFO -- default-windows-2012r2: Azure environment: Azure
+I, [2017-07-15T11:51:05.255231 #4104]  INFO -- default-windows-2012r2: Destroying Resource Group: kitchen-default-windows-2012r2-20170715T152503
+I, [2017-07-15T11:51:10.808180 #4104]  INFO -- default-windows-2012r2: Destroy operation accepted and will continue in the background.
+I, [2017-07-15T11:51:10.831185 #4104]  INFO -- default-windows-2012r2: Finished destroying <default-windows-2012r2> (0m5.70s).

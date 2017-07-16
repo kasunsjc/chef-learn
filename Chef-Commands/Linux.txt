@@ -1,0 +1,21 @@
+#Install Chef Client (Development kits to node)
+curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P chefdk -c stable -v 0.16.28
+
+#Install Nano Text Editor
+yum install nano -y
+
+#To run the chef client locally 
+chef-client --local-mode webserver.rb
+
+#create cookbook 
+chef generate cookbook cookbooks/learn_chef_httpd
+
+#create template
+chef generate template cookbooks/learn_chef_httpd index.html
+
+#run the cookbook
+chef-client --local-mode --runlist 'recipe[learn_chef_httpd]' #runs the refault recipe 'recipe[learn_chef_httpd::default]'
+chef-client --local-mode --runlist 'recipe[learn_chef_httpd::testrecipe]' #run different recipe in the cookbook
+
+#bootstrap a linux vm with password authuntication
+knife bootstrap 52.187.24.51 --ssh-user localadmin --ssh-password '' --sudo --use-sudo-password --node-name apache01 --run-list 'recipe[learn_chef_httpd]' --json-attributes '{"cloud": {"public_ip": "52.187.24.51"}}'
