@@ -1,3 +1,3 @@
-I, [2017-07-15T11:50:51.792577 #4104]  INFO -- Kitchen: -----> Starting Kitchen (v1.16.0)
-I, [2017-07-15T11:51:05.111224 #4104]  INFO -- Kitchen: -----> Destroying <default-windows-2012r2>...
-I, [2017-07-15T11:51:10.836679 #4104]  INFO -- Kitchen: -----> Kitchen is finished. (0m19.04s)
+I, [2017-07-18T08:21:43.156854 #18148]  INFO -- Kitchen: -----> Starting Kitchen (v1.16.0)
+I, [2017-07-18T08:21:56.918527 #18148]  INFO -- Kitchen: -----> Destroying <default-windows-2012r2>...
+I, [2017-07-18T08:22:01.826679 #18148]  INFO -- Kitchen: -----> Kitchen is finished. (0m18.67s)
